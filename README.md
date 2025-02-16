@@ -152,25 +152,23 @@ cd backend
 ```
 npm install
 ```
-4. Install Prisma CLI:
-```
-npm install @prisma/client
-```
-5. Initialize Prisma:
+4. Initialize Prisma:
 ```
 npx prisma init
 ```
-6. Configure the `.env` file with database credentials:
+4. Configure the `.env` file with database credentials:
 ```
 DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
-JWT_SECRET=<your_jwt_secret>
-PORT=5000
 ```
-7. Run database migrations:
+5. Run database migrations:
 ```
 npx prisma migrate dev --name init
 ```
-8. Start the backend server:
+6. Generate Prisma client:
+```
+npx prisma generate
+```
+7. Start the backend server:
 ```
 npm run dev
 ```
